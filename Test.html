@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="number" onclick="nums()" id="number">
+        <div id="dis" ></div>
+        <!-- <button >click</button> -->
+    </div>
+</body>
+<script>
+    function nums(){
+        
+        var num = parseInt(document.getElementById('number').value);
+        if(num<0){
+            document.getElementById('dis').innerHTML='Please, enter a positive number';
+        }
+        else if(num%2==0){
+            var output = [];
+            let nu = num;
+            for(let i=0;i<3;i++){
+                 nu = nu + 2;
+                output.push(nu); 
+            }
+             document.getElementById('dis').innerHTML=output;
+        }
+        else
+        {
+            var output = []
+            let nm = num;
+            for(let i=0;i<3;i++){
+                 nm = nm + 2;
+                output.push(nm);
+            }
+            var num2= document.getElementById('dis').innerHTML=output;
+        }
+        return NaN(num2)
+    }
+</script>
+</html>
